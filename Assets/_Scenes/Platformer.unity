@@ -6906,7 +6906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1659646988922648439, guid: 2f0892c7c34d3c54f9f97ba3b89430ec, type: 3}
       propertyPath: bulletType
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f0892c7c34d3c54f9f97ba3b89430ec, type: 3}
@@ -6968,6 +6968,14 @@ PrefabInstance:
     - target: {fileID: 1290099564353206169, guid: 21be60da9c0455248a3b3651d116cfce, type: 3}
       propertyPath: m_Name
       value: Opossum
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793725243430863725, guid: 21be60da9c0455248a3b3651d116cfce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793725243430863725, guid: 21be60da9c0455248a3b3651d116cfce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21be60da9c0455248a3b3651d116cfce, type: 3}

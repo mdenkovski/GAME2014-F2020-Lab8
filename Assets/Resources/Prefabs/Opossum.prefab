@@ -233,7 +233,8 @@ MonoBehaviour:
   rampDirection: 0
   opossumLOS: {fileID: 376844070800787649}
   bulletSpawn: {fileID: 8793725243430863725}
-  fireDelay: 10
+  fireDelay: 20
+  player: {fileID: 0}
 --- !u!1 &1927397191873776378
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +246,7 @@ GameObject:
   - component: {fileID: 8302429888124996699}
   - component: {fileID: 4877114199431840869}
   - component: {fileID: 376844070800787649}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: LOS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
