@@ -25,6 +25,10 @@ public class OpossumBehaviour : MonoBehaviour
     public RampDirection rampDirection;
 
     public LOS opossumLOS;
+
+    [Header("Bullet Firing")]
+    public Transform bulletSpawn;
+    public float fireDelay;
    
 
     // Start is called before the first frame update
@@ -39,11 +43,23 @@ public class OpossumBehaviour : MonoBehaviour
     {
         if(_HasLOS())
         {
-            Debug.Log("Opossum can see the player");
+            _FireBullet();
+            //Debug.Log("Opossum can see the player");
         }
         _LookInFront();
         _LookAhead();
         _Move();
+    }
+
+    private void _FireBullet()
+    {
+        // delay bullet firing 
+        if (Time.frameCount % fireDelay == 0 && BulletManager.Instance().HasBullets())
+        {
+            Debug.Log("trying to fire a bullet");
+            BulletManager.Instance().GetBullet(bulletSpawn.position);
+        }
+        //BulletManager.Instance().GetBullet(bulletSpawn.position);
     }
 
 

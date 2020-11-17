@@ -30,8 +30,25 @@ public class BulletController : MonoBehaviour, IApplyDamage
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log(other.gameObject.name);
-        BulletManager.Instance().ReturnBullet(gameObject);
+
+        switch (other.gameObject.tag)
+        {
+            case "Player":
+                BulletManager.Instance().ReturnBullet(gameObject);
+                break;
+            case "Enemy":
+                BulletManager.Instance().ReturnBullet(gameObject);
+                break;
+            default:
+                break;
+        }
+
+        ////Debug.Log(other.gameObject.name);
+        //if(other.gameObject.CompareTag("Enemy"))
+        //{
+        //    BulletManager.Instance().ReturnBullet(gameObject);
+
+        //}
     }
 
     public int ApplyDamage()
